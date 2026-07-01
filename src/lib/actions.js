@@ -4,7 +4,7 @@ import { cookies, headers } from "next/headers";
 import { auth } from "./auth";
 import { revalidatePath } from "next/cache";
 
-const BACKEND_URL = process.env.BACKEND_URL || "http://127.0.0.1:8080";
+const BACKEND_URL = process.env.BACKEND_URL;
 
 // Helper to get authenticated headers
 async function getAuthHeaders() {

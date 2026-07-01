@@ -1,6 +1,6 @@
 import { cookies } from "next/headers";
 
-const BACKEND_URL = process.env.BACKEND_URL || "http://127.0.0.1:8080";
+const BACKEND_URL = process.env.BACKEND_URL;
 
 // Helper to get authenticated headers for server components
 async function getAuthHeaders() {
