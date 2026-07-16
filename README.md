@@ -14,17 +14,6 @@ The platform provides a complete ecosystem for prompt engineers, developers, and
 
 ---
 
-# 📸 Project Screenshot
-
-> Replace the image below with your latest homepage/dashboard screenshot.
-
-```text
-README/assets/promptsphere-preview.png
-```
-
-![PromptSphere Screenshot](README/assets/promptsphere-preview.png)
-
----
 
 # 📝 Project Overview
 
@@ -241,14 +230,6 @@ http://localhost:3000
 
 ---
 
-# 📂 Repository Structure
-
-```
-AI_Prompt_Client/
-AI_Prompt_Server/
-```
-
----
 
 # 📌 Resources
 
