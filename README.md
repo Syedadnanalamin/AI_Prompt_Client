@@ -9,8 +9,8 @@ The platform provides a complete ecosystem for prompt engineers, developers, and
 # 🌐 Live Demo
 
 * **Live Website:** https://ai-prompt-client-rose.vercel.app/
-* **Client Repository:** https://github.com/yourusername/AI_Prompt_Client
-* **Server Repository:** https://github.com/yourusername/AI_Prompt_Server
+
+* **Server Repository:** https://github.com/Syedadnanalamin/AI_Prompt_Server
 
 ---
 
