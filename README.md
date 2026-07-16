@@ -1,75 +1,267 @@
-# PromptSphere - AI Prompt Sharing & Marketplace Platform
+# 🚀 PromptSphere - AI Prompt Sharing & Marketplace
 
-PromptSphere is a modern, community-driven SaaS ecosystem designed to discover, create, bookmark, review, and monetize high-performance AI prompts for LLM and image models (such as ChatGPT, Claude, Midjourney, DALL-E, Gemini, and Stable Diffusion).
+PromptSphere is a modern SaaS marketplace where users can discover, create, share, and monetize high-quality AI prompts for popular Large Language Models (LLMs) and image generation tools such as ChatGPT, Claude, Gemini, Midjourney, DALL·E, and Stable Diffusion.
 
-## Purpose
-The platform connects prompt engineers (Creators) with developers and designers looking for optimized instructions, offering role-based controls, dashboard analytics, a payment interface for subscription upgrades, and robust admin moderation tools.
-
-## Key Features
-* **Role-Based Access Control (RBAC):** Supports `User`, `Creator`, and `Admin` permissions. Protected routes verify roles before granting access.
-* **Authentication with Better Auth:** Secure email/password registrations, sign-ins, and social sign-on handlers.
-* **Visual Marketplace & Search:** Live keyword search (by title, tool, tags), sidebar filters (category, tool, difficulty), sorting (popular, copied, latest), and server-side pagination.
-* **Prompt Analytics:** Creators track engagement (copy counts and bookmarks) with visual charts rendered via Recharts.
-* **Payment Gateway Integration:** Integrated Stripe elements checking out lifetime Premium passes for $5.
-* **AI Sandbox Simulator:** Try prompts inside a mock console with customizable variable inputs and dynamic model output text streams.
-* **Reviews and Flagging:** Write reviews with star-ratings, and report violations (spam, copyright, inappropriate content) directly to admins.
-* **Moderation Workspace:** Admins approve/reject prompt submissions, update roles, manage logs, dismiss reports, and analyze global telemetry.
+The platform provides a complete ecosystem for prompt engineers, developers, and designers with role-based access, premium subscriptions, analytics, and moderation tools.
 
 ---
 
-## npm Packages Used
+# 🌐 Live Demo
 
-### Next.js Client (`AI_Prompt_Client`)
-* `next` (v16.2.9) - App Router React framework
-* `react` / `react-dom` (v19.2.4) - Render engine
-* `better-auth` / `@better-auth/mongo-adapter` - User session handlers & MongoDB mapping
-* `mongodb` (v7.3.0) - Connection drivers
-* `framer-motion` - Dynamic fade-in/slide-out animations
-* `recharts` - Analytics timeline rendering
-* `lucide-react` - UI icon set
-* `react-hot-toast` - Action state confirmations
-* `@radix-ui/react-dialog` / `@radix-ui/react-tabs` / `@radix-ui/react-select` / `@radix-ui/react-dropdown-menu` - UI components accessibility primitives
-
-### Express Server (`AI_Prompt_Server`)
-* `express` - Backend runtime framework
-* `cors` - Safe CORS headers
-* `dotenv` - Environmental value injector
-* `mongodb` - Database connector
-* `stripe` - Payment verification SDK
-* `nodemon` - Hot-reload tool (Development)
+* **Live Website:** https://ai-prompt-client-rose.vercel.app/
+* **Client Repository:** https://github.com/yourusername/AI_Prompt_Client
+* **Server Repository:** https://github.com/yourusername/AI_Prompt_Server
 
 ---
 
-## Getting Started
+# 📸 Project Screenshot
 
-### Prerequisites
-* Node.js v26.3.1 (or higher)
-* Active MongoDB Atlas cluster URI
-* Stripe Publishable and Secret Keys
+> Replace the image below with your latest homepage/dashboard screenshot.
 
-### Configuration
-Create `.env` inside `AI_Prompt_Server/` and `.env.local` inside `AI_Prompt_Client/` with:
-```env
-PORT=8080
-MONGO_URI="mongodb://your-mongodb-connection-string"
-BETTER_AUTH_SECRET="your-better-auth-secret"
-BETTER_AUTH_URL="http://localhost:3000"
-NEXT_PUBLIC_APP_URL="http://localhost:3000"
-NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY="your-stripe-publishable-key"
-STRIPE_SECRET_KEY="your-stripe-secret-key"
+```text
+README/assets/promptsphere-preview.png
 ```
 
-### Installation & Run
-1. **Start Server:**
-   ```bash
-   cd AI_Prompt_Server
-   npm install
-   npm start
-   ```
-2. **Start Next.js Client:**
-   ```bash
-   cd AI_Prompt_Client
-   npm install
-   npm run dev
-   ```
-   Open `http://localhost:3000` to browse PromptSphere.
+![PromptSphere Screenshot](README/assets/promptsphere-preview.png)
+
+---
+
+# 📝 Project Overview
+
+PromptSphere helps AI enthusiasts discover and organize effective prompts while giving creators the ability to publish premium prompt collections and track their performance. The platform combines authentication, subscriptions, moderation, analytics, and a responsive marketplace into one modern application.
+
+---
+
+# 🛠️ Technologies Used
+
+## Frontend
+
+* Next.js 16 (App Router)
+* React 19
+* Tailwind CSS
+* Better Auth
+* MongoDB
+* Framer Motion
+* Recharts
+* Lucide React
+* Radix UI
+* React Hot Toast
+
+## Backend
+
+* Express.js
+* MongoDB
+* Stripe
+* Better Auth
+* CORS
+* Dotenv
+
+---
+
+# ✨ Core Features
+
+### 🔐 Authentication & Authorization
+
+* Secure authentication using Better Auth
+* Email/password login
+* Social authentication
+* Role-Based Access Control (User, Creator, Admin)
+* Protected routes
+
+### 🛒 AI Prompt Marketplace
+
+* Browse prompts with beautiful cards
+* Live keyword search
+* Category filtering
+* Tool filtering
+* Difficulty filtering
+* Server-side pagination
+* Popular, Latest, and Most Copied sorting
+
+### 👨‍💻 Creator Dashboard
+
+* Publish prompts
+* Edit/Delete prompts
+* Track bookmarks
+* Monitor copy counts
+* Analytics dashboard using Recharts
+
+### ⭐ Community Features
+
+* Bookmark prompts
+* Copy prompts instantly
+* Rate prompts
+* Leave reviews
+* Report inappropriate content
+
+### 💳 Premium Subscription
+
+* Stripe payment integration
+* Lifetime Premium plan
+* Secure checkout flow
+
+### 🧪 AI Sandbox
+
+* Test prompts before using them
+* Dynamic variable input
+* Simulated AI response streaming
+
+### 🛡️ Admin Dashboard
+
+* Review submitted prompts
+* Approve or reject prompts
+* Manage users and roles
+* Handle reported content
+* Monitor platform activity
+
+---
+
+# 📦 Main Dependencies
+
+## Client
+
+* next
+* react
+* react-dom
+* better-auth
+* @better-auth/mongo-adapter
+* mongodb
+* framer-motion
+* recharts
+* lucide-react
+* react-hot-toast
+* @radix-ui/react-dialog
+* @radix-ui/react-tabs
+* @radix-ui/react-select
+* @radix-ui/react-dropdown-menu
+
+## Server
+
+* express
+* mongodb
+* stripe
+* cors
+* dotenv
+* nodemon
+
+---
+
+# ⚙️ Environment Variables
+
+## Server (.env)
+
+```env
+PORT=8080
+
+MONGO_URI=your_mongodb_connection_string
+
+BETTER_AUTH_SECRET=your_secret
+
+BETTER_AUTH_URL=http://localhost:3000
+
+STRIPE_SECRET_KEY=your_stripe_secret_key
+```
+
+## Client (.env.local)
+
+```env
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=your_publishable_key
+```
+
+---
+
+# 🚀 Run Locally
+
+### 1. Clone the repositories
+
+```bash
+git clone https://github.com/yourusername/AI_Prompt_Client.git
+
+git clone https://github.com/yourusername/AI_Prompt_Server.git
+```
+
+---
+
+### 2. Install dependencies
+
+#### Client
+
+```bash
+cd AI_Prompt_Client
+npm install
+```
+
+#### Server
+
+```bash
+cd AI_Prompt_Server
+npm install
+```
+
+---
+
+### 3. Configure Environment Variables
+
+Create:
+
+* `.env.local` inside **AI_Prompt_Client**
+* `.env` inside **AI_Prompt_Server**
+
+Copy the variables shown above.
+
+---
+
+### 4. Start the backend
+
+```bash
+cd AI_Prompt_Server
+npm start
+```
+
+---
+
+### 5. Start the frontend
+
+```bash
+cd AI_Prompt_Client
+npm run dev
+```
+
+---
+
+### 6. Open the application
+
+Visit:
+
+```
+http://localhost:3000
+```
+
+---
+
+# 📂 Repository Structure
+
+```
+AI_Prompt_Client/
+AI_Prompt_Server/
+```
+
+---
+
+# 📌 Resources
+
+* Live Website
+* Client Repository
+* Server Repository
+* MongoDB Atlas
+* Stripe Dashboard
+
+---
+
+# 👨‍💻 Author
+
+**Syed Adnan**
+
+Full Stack Developer (MERN)
