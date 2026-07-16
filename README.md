@@ -166,9 +166,9 @@ NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=your_publishable_key
 ### 1. Clone the repositories
 
 ```bash
-git clone https://github.com/yourusername/AI_Prompt_Client.git
+git clone https://github.com/Syedadnanalamin/AI_Prompt_Client.git
 
-git clone https://github.com/yourusername/AI_Prompt_Server.git
+git clone https://github.com/Syedadnanalamin/AI_Prompt_Server.git
 ```
 
 ---
